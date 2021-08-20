@@ -1,5 +1,5 @@
 const Cliente = require('../models/cliente')
-const db = require('../bd');
+const db = require('../database/connection');
 
 const crearCliente = async (req, res) => {
      const {cedula, nombres, apellidos} = req.body;
